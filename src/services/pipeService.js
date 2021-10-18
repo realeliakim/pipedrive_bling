@@ -11,8 +11,8 @@ class OrderService {
   }
 
   async saveOpportunities(req, res) {
-    req.map((deals) => {
-      OrderSchema.create({
+    req.forEach(async (deals) => {
+      await OrderSchema.create({
         _id: deals.id,
         orderDay: deals.orderDay,
         title: deals.title,
