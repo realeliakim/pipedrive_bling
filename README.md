@@ -28,6 +28,10 @@ $ cd pipedrive_bling
 # Instale as dependências
 $ yarn
 
+
+Renomei o arquivo env.example para .env e insira suas credenciais
+
+
 # Execute aplicação
 $ yarn dev
 
